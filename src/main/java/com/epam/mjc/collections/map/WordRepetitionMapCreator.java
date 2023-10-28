@@ -13,7 +13,7 @@ public class WordRepetitionMapCreator {
                 int now = result.get(delimin[i]);
                 result.replace(delimin[i], (now + 1));
             }
-            else if (delimin[i]!= "")
+            else if (!(delimin[i].equals("")))
                 result.put(delimin[i], 1);
         }
         result.remove("");
