@@ -9,7 +9,7 @@ public class WordRepetitionMapCreator {
         Map<String, Integer> result = new HashMap<>();
         String[] delimin= sentence.toLowerCase().split("\\W");
         for(int i = 0; i<delimin.length; i++){
-            if(delimin[i] == "")
+            if(delimin[i].contains("\\W"))
                  continue;
             if(result.containsKey(delimin[i])){
                 int now = result.get(delimin[i]);
