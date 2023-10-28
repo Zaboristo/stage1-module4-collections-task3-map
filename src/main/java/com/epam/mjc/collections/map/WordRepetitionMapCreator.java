@@ -16,7 +16,7 @@ public class WordRepetitionMapCreator {
             else if (!(delimin[i].equals("")))
                 result.put(delimin[i], 1);
         }
-        result.remove("");
+
         return result;
     }
 }
